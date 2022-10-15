@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_page_2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios</h1>
+&nbsp;</header>
+<nav>
+	 <ul id="menu_2">
+		 	<li><a href="../index.html">INICIO</a></li>
+   			<li><a href="Formatos de Textos.html">Formatos de texto</a></li>
+    		<li><a href="Listas en html.html">Listas</a></li>
+   			<li><a href="Enlaces.html">Enlaces</a></li>
+   			<li><a href="Tablas.html">Tablas</a></li>
+	  		<li><a href="Imagenes.html">Imagenes</a></li>
+		 	<li><a href="Audio.html">Audio</a></li>
+		 	<li><a href="Video.html">Video</a></li>
+ 		 </ul>
+	</nav>
+<main>
+  <section>
+    <h2>Formulario</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis iste, adipisci necessitatibus quisquam id incidunt asperiores quae repudiandae quia, rem illum dolores enim dolor natus reprehenderit. Impedit, tempora veritatis.</p>
+    <form id="form1" name="form1" method="get">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+		<br> <br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido">
+		<br> <br>
+      <input type="submit" name="boton1" id="boton1" value="Enviar">
+      
+    </form>
+  </section>
+  <section>
+    <h2>Formulario de opciones&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis iste, adipisci necessitatibus quisquam id incidunt asperiores quae repudiandae quia, rem illum dolores enim dolor natus reprehenderit. Impedit, tempora veritatis.</p>
+    <form id="form2" name="form2" method="get">
+      <label for="pais">¿De qué país nos visitas? :</label>	
+      <select name="pais" id="pais">
+        <option value="Mx">México</option>
+        <option value="Us">Estados Unidos</option>
+        <option value="Es" selected="selected">España</option>
+        <option value="Ar">Argentina</option>
+        <option value="Co">Colombia</option>
+        <option value="It">Italia</option>
+      </select>
+		<br> <br>
+      <label>Género:&nbsp;</label>
+      <p>
+        <label>
+          <input type="radio" name="Genero" value="hombre" id="Genero_0">
+          Hombre</label>
+        <br>
+        <label>
+          <input type="radio" name="Genero" value="mujer" id="Genero_1">
+          Mujer</label>
+        <br>
+      </p>
+      <label>¿Cuál será tu residencia durante tu estancia?&nbsp; &nbsp;</label>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="hotel" id="residencia_temporal_0">
+            Hotel</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="particular" id="residencia_temporal_1">
+            Domicilio de amigo/familia</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="residencia_temporal" value="airbnb" id="residencia_temporal_2">
+            Airbnb</label></td>
+        </tr>
+      </table>
+<br><br>
+      <input type="submit" name="submit" id="boton_2" value="Enviar">
+    </form>
+  </section>
+  <section>
+    <h2>Formulario de contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis iste, adipisci necessitatibus quisquam id incidunt asperiores quae repudiandae quia, rem illum dolores enim dolor natus reprehenderit. Impedit, tempora veritatis.</p>
+    <form action="procesamiento.html" method="get" name="form3" id="form3" autocomplete="off">
+      <label for="Nombre">Nombre:</label>
+      <input name="Nombre" type="text" required="required" id="Nombre">
+<label for="email">Email:</label>
+      <input name="email" type="email" id="email">
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="mensaje" rows="6" maxlength="150" required="required" id="mensaje" placeholder="Escribe tu mensaje... "></textarea>
+      <input name="boton3" type="submit" id="boton3" value="Enviar">
+    </form>
+</section>
+  <section>
+    <h2>Mi formulario&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis iste, adipisci necessitatibus quisquam id incidunt asperiores quae repudiandae quia, rem illum dolores enim dolor natus reprehenderit. Impedit, tempora veritatis.</p>
+    <form id="form4" name="form4" method="get">
+		<p class="parrafo_2">Renovacion de socio</p>
+      <label for="name">Nombre Completo:&nbsp;</label>
+      <input type="text" name="name" id="name">
+      <label for="nacimiento">Fecha de nacimiento:</label>
+  	  <input type="date" id="nacimiento" name="nacimiento">
+	  <label for="socio">Desde cuando eres socio del club:</label>
+      <input type="month" id="socio" name="socio">
+	  <label for="numero">Número de socio:</label>
+      <input type="number" id="numero" name="numero" min="0" max="5000" step="1">
+	  <label for="phone">Número de teléfono:</label>
+      <input type="tel" id="phone" name="phone" placeholder="222 786 8975"> 
+	  <label for="horario">Horario en la que ingresas usualmente:</label>
+      <input type="time" id="horario" name="horario">
+	  <br> <br>
+      <input type="submit" name="submit" id="submit" value="Enviar">
+    </form>
+  </section>
+&nbsp;</main>
+<footer>
+  <h6>Elaborado por Maria Fernanda Anaya Cuautle&nbsp;</h6>
+&nbsp;</footer>
+</body>
+</html>
